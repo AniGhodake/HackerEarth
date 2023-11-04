@@ -29,7 +29,17 @@ int main(){
  ans = max(ans, ptr - j);
  }
  
- for(int i = 1; i <= n; i++)
+ // for(int i = 1; i <= n; i++)
+ // for(int j = 1, ptr = 1; j <= m; j = ptr)
+ // if(c[i][j] != '#' || c[i + 1][ptr] == '#')
+ // ptr++;
+ // else{
+ // while(c[i][ptr] == '#' && c[i + 1][ptr] != '#')
+ // ptr++;
+ // ans = max(ans, ptr - j);
+ // }
+  
+  for(int i = 1; i <= n; i++)
  for(int j = 1, ptr = 1; j <= m; j = ptr)
  if(c[i][j] != '#' || c[i + 1][ptr] == '#')
  ptr++;
@@ -38,7 +48,6 @@ int main(){
  ptr++;
  ans = max(ans, ptr - j);
  }
- 
  for(int i = 1; i <= m; i++)
  for(int j = 1, ptr = 1; j <= n; j = ptr)
  if(c[j][i] != '#' || c[j][i - 1] == '#')
