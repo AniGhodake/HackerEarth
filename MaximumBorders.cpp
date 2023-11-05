@@ -38,8 +38,13 @@ int main(){
  // ptr++;
  // ans = max(ans, ptr - j);
  // }
+
+
+
+
   
-  for(int i = 1; i <= n; i++)
+  
+ for(int i = 1; i <= n; i++)
  for(int j = 1, ptr = 1; j <= m; j = ptr)
  if(c[i][j] != '#' || c[i + 1][ptr] == '#')
  ptr++;
