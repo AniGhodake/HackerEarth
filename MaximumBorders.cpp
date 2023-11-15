@@ -63,7 +63,16 @@ int main(){
  ans = max(ans, ptr - j);
  }
  
- for(int i = 1; i <= m; i++)
+ // for(int i = 1; i <= m; i++)
+ // for(int j = 1, ptr = 1; j <= n; j = ptr)
+ // if(c[j][i] != '#' || c[j][i + 1] == '#')
+ // ptr++;
+ // else{
+ // while(c[ptr][i] == '#' && c[ptr][i + 1] != '#')
+ // ptr++;
+ // ans = max(ans, ptr - j);
+ // }
+  for(int i = 1; i <= m; i++)
  for(int j = 1, ptr = 1; j <= n; j = ptr)
  if(c[j][i] != '#' || c[j][i + 1] == '#')
  ptr++;
